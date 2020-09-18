@@ -1,0 +1,35 @@
+{
+    "schemaVersion": 1,
+    "id": "launchersmod",
+    "version": "${version}",
+    "name": "Launchers",
+    "description": "Introduces three different Launcher Blocks. Open the wiki for more detail",
+    "authors": [
+        "t_r_a_t"
+    ],
+    "contact": {
+        "homepage": "https://github.com/tratteo/LaunchersMod/wiki",
+        "sources": "https://github.com/tratteo/LaunchersMod"
+    },
+    "license": "CC0-1.0",
+    "icon": "assets/launchersmod/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "net.launchers.mod.loader.LMLoader"
+        ],
+        "client": [
+            "net.launchers.mod.loader.ClientLoader"
+        ]
+    },
+    "mixins": [
+    ],
+    "depends": {
+        "fabricloader": ">=0.7.2",
+        "fabric": "*",
+        "minecraft": "1.16.x"
+    },
+    "suggests": {
+        "flamingo": "*"
+    }
+}
