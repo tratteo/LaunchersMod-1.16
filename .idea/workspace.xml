@@ -2,43 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3e28d28-3ec7-46e2-b46e-e5d896cb529a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/LaunchersMod-1.16.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LaunchersMod-1.16.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LaunchersMod-1.16.ipr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LaunchersMod-1.16.iws" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/.fabric/remappedJars/minecraft-1.16.3/intermediary-minecraft-1.16.3-mapped-net.fabricmc.yarn-1.16.3+build.7-v2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-09-27_00.16.08-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-09-27_00.20.35-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-09-27_00.26.39-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-09-27_00.27.33-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-09-27_00.31.32-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-09-27_00.32.05-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-09-27_00.33.25-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2020-09-27_00.40.04-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-09-27-1.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-09-27-2.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-09-27-3.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-09-27-4.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-09-27-5.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-09-27-6.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2020-09-27-7.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Client.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Client.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Minecraft_Server.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/.mixin.out/audit/mixin_implementation_report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/.mixin.out/audit/mixin_implementation_report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/config/fabric/indigo-renderer.properties" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/fabric/indigo-renderer.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-4.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LiterallyChunkLoader-1.16" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LaunchersMod-1.15" />
   </component>
   <component name="RunManager" selected="Application.Minecraft Client">
     <configuration name="gradlew" type="ShConfigurationType" temporary="true">
@@ -142,10 +109,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="958" y="424" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1601147065913" />
-    <state x="1008" y="397" key="FileChooserDialogImpl" timestamp="1601160434752">
+    <state x="1008" y="397" key="FileChooserDialogImpl" timestamp="1603381213957">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1008" y="397" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1601160434752" />
+    <state x="1008" y="397" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1603381213957" />
     <state width="2505" height="743" key="GridCell.Tab.0.bottom" timestamp="1601160436479">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
