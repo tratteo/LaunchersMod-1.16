@@ -10,18 +10,13 @@ import net.minecraft.util.Identifier;
 
 public abstract class CustomPacket
 {
-    public static Identifier PACKET_ID = new Identifier(LMLoader.MOD_ID, "cp");
+
     
     public CustomPacket()
     {
     }
     
-    public void sendTo(PlayerEntity player)
-    {
-        PacketByteBuf buf = new PacketByteBuf(Unpooled.buffer());
-        write(buf);
-        ServerSidePacketRegistry.INSTANCE.sendToPlayer(player, PACKET_ID, buf);
-    }
+    public abstract void sendTo(PlayerEntity player);
     
     protected abstract void onReceive(PacketContext ctx);
     

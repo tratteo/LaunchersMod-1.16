@@ -3,26 +3,28 @@ package net.launchers.mod.block.abstraction;
 import net.launchers.mod.entity.abstraction.AbstractLauncherBlockEntity;
 import net.launchers.mod.initializer.LMSounds;
 import net.launchers.mod.loader.LMLoader;
-import net.launchers.mod.network.LaunchersNetworkHandler;
+import net.launchers.mod.network.NetworkHandler;
 import net.launchers.mod.network.packet.UnboundedEntityVelocityS2CPacket;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockEntityProvider;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.ShapeContext;
+import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.network.packet.s2c.play.PlaySoundS2CPacket;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.BooleanProperty;
+import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
+import net.minecraft.util.BlockMirror;
+import net.minecraft.util.BlockRotation;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
@@ -37,6 +39,9 @@ public abstract class AbstractLauncherBlock extends Block implements BlockEntity
     public static final Identifier LAUNCH_SOUND = new Identifier(LMLoader.MOD_ID, "launcher_block_launch");
     public static final BooleanProperty TRIGGERED;
     public static final IntProperty MODELS = IntProperty.of("models", 0, 2);
+    public static final DirectionProperty FACING;
+    
+
     private float launchForce = 1F;
     private int maxStackable = 4;
     protected float stackPowerPercentage;
@@ -46,6 +51,7 @@ public abstract class AbstractLauncherBlock extends Block implements BlockEntity
     static
     {
         TRIGGERED = Properties.TRIGGERED;
+        FACING = FacingBlock.FACING;
     }
     
     //DropperBlock
@@ -54,7 +60,7 @@ public abstract class AbstractLauncherBlock extends Block implements BlockEntity
     public AbstractLauncherBlock(Settings settings)
     {
         super(settings);
-        this.setDefaultState(this.stateManager.getDefaultState().with(MODELS, 0).with(TRIGGERED, false));
+        this.setDefaultState(this.stateManager.getDefaultState().with(MODELS, 0).with(TRIGGERED, false).with(FACING, Direction.NORTH));
     }
     
     @Override
@@ -71,7 +77,7 @@ public abstract class AbstractLauncherBlock extends Block implements BlockEntity
     
     @Override protected void appendProperties(StateManager.Builder<Block, BlockState> builder)
     {
-        builder.add(MODELS, TRIGGERED);
+        builder.add(MODELS, TRIGGERED, FACING);
     }
     
     public void launchEntities(World world, BlockPos pos, List<? extends Entity> entities)
@@ -99,7 +105,7 @@ public abstract class AbstractLauncherBlock extends Block implements BlockEntity
             {
                 entity.setVelocity(new Vec3d(0F, force, 0F));
                 UnboundedEntityVelocityS2CPacket packet = new UnboundedEntityVelocityS2CPacket(entity.getEntityId(), 0F, force, 0F);
-                LaunchersNetworkHandler.sendToAll(packet, world.getServer().getPlayerManager());
+                NetworkHandler.sendToAll(packet, world.getServer().getPlayerManager());
             }
         }
     }
@@ -163,7 +169,20 @@ public abstract class AbstractLauncherBlock extends Block implements BlockEntity
         BlockPos up = pos.up();
         return !world.getBlockState(up).isSolidBlock(world, up) && launcherBlockEntity.launcherState == AbstractLauncherBlockEntity.LauncherState.RETRACTED;
     }
+    public BlockState getPlacementState(ItemPlacementContext ctx)
+    {
+        return (BlockState) this.getDefaultState().with(FACING, ctx.getPlayerLookDirection().getOpposite());
+    }
     
+    public BlockState rotate(BlockState state, BlockRotation rotation)
+    {
+        return (BlockState) state.with(FACING, rotation.rotate((Direction) state.get(FACING)));
+    }
+    
+    public BlockState mirror(BlockState state, BlockMirror mirror)
+    {
+        return state.rotate(mirror.getRotation((Direction) state.get(FACING)));
+    }
     @Override
     public abstract BlockEntity createBlockEntity(BlockView view);
 }
