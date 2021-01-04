@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3e28d28-3ec7-46e2-b46e-e5d896cb529a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/launchersmod/models/template/template_launcher_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/launchers/mod/utils/MathUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/LaunchersMod-1.16.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LaunchersMod-1.16.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/.mixin.out/audit/mixin_implementation_report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/.mixin.out/audit/mixin_implementation_report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/config/fabric/indigo-renderer.properties" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/fabric/indigo-renderer.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-12-01-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-12-01-1.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-12-01-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-12-01-2.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-12-01-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-12-01-3.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-12-01-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-12-01-4.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-12-01-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-12-01-5.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-12-01-6.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-12-01-6.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2020-12-01-7.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2020-12-01-7.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
@@ -24,37 +18,20 @@
       <change beforePath="$PROJECT_DIR$/run/logs/debug-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-5.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM-1/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM-1/data/raids.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM1/data/raids_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM1/data/raids_end.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/d1fadcd5-f8ee-389b-ae76-2112e34d591e.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/advancements/d1fadcd5-f8ee-389b-ae76-2112e34d591e.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/raids.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat_old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/d1fadcd5-f8ee-389b-ae76-2112e34d591e.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/d1fadcd5-f8ee-389b-ae76-2112e34d591e.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/d1fadcd5-f8ee-389b-ae76-2112e34d591e.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/playerdata/d1fadcd5-f8ee-389b-ae76-2112e34d591e.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/poi/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/poi/r.0.0.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/d1fadcd5-f8ee-389b-ae76-2112e34d591e.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/stats/d1fadcd5-f8ee-389b-ae76-2112e34d591e.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/launchers/mod/block/abstraction/AbstractLauncherBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/launchers/mod/block/abstraction/AbstractLauncherBlock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/launchers/mod/entity_renderer/abstraction/AbstractLauncherBlockEntityRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/launchers/mod/entity_renderer/abstraction/AbstractLauncherBlockEntityRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/launchers/mod/loader/ClientLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/launchers/mod/loader/ClientLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/launchers/mod/network/LaunchersNetworkHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/launchers/mod/network/NetworkHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/launchers/mod/network/packet/CustomPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/launchers/mod/network/packet/CustomPacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/launchers/mod/network/packet/UnboundedEntityVelocityS2CPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/launchers/mod/network/packet/UnboundedEntityVelocityS2CPacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/launchersmod/blockstates/extreme_launcher_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/launchersmod/blockstates/extreme_launcher_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/launchersmod/blockstates/launcher_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/launchersmod/blockstates/launcher_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/launchersmod/blockstates/powered_launcher_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/launchersmod/blockstates/powered_launcher_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/launchersmod/models/block/extreme_launcher_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/launchersmod/models/block/extreme_launcher_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/launchersmod/models/block/launcher_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/launchersmod/models/block/launcher_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/launchersmod/models/block/powered_launcher_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/launchersmod/models/block/powered_launcher_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/launchersmod/models/item/extreme_launcher_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/launchersmod/models/item/extreme_launcher_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/launchersmod/models/item/launcher_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/launchersmod/models/item/launcher_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/launchersmod/models/item/powered_launcher_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/launchersmod/models/item/powered_launcher_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/launchersmod/models/template/template_launcher_head.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/launchersmod/models/template/template_launcher_head.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/launchersmod/models/template/template_launcher_head_short.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/launchersmod/models/template/template_launcher_head_short.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +54,13 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
