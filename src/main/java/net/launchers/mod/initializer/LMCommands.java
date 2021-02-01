@@ -84,9 +84,8 @@ public final class LMCommands
         
         private static boolean areLauncherIdValid(ArrayList<String> ids)
         {
-            for(int i = 0; i < ids.size(); i++)
+            for(String current : ids)
             {
-                String current = ids.get(i);
                 if(!current.equals("l") && !current.equals("p") && !current.equals("e"))
                 {
                     return false;
