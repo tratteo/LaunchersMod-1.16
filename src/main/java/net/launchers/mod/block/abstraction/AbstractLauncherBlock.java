@@ -96,7 +96,7 @@ public abstract class AbstractLauncherBlock extends Block implements BlockEntity
             double multiplier = 1F;
             if(!stackDirection.equals(Direction.UP) && !stackDirection.equals(Direction.DOWN))
             {
-                multiplier *= 1.65F;
+                multiplier *= 1.75F;
             }
             Block current;
             while(currentIndex < maxStackable &&
@@ -111,9 +111,11 @@ public abstract class AbstractLauncherBlock extends Block implements BlockEntity
             force *= multiplier;
             for(Entity entity : entities)
             {
+                Vec3d initialVelocity = entity.getVelocity();
                 Vec3d vectorForce = MathUtils.fromDirection(world.getBlockState(pos).get(AbstractLauncherBlock.FACING));
-                entity.setVelocity(vectorForce.multiply(force));
-                UnboundedEntityVelocityS2CPacket packet = new UnboundedEntityVelocityS2CPacket(entity.getEntityId(), vectorForce.multiply(force));
+                Vec3d velocity = vectorForce.multiply(force).add(initialVelocity);
+                entity.setVelocity(velocity);
+                UnboundedEntityVelocityS2CPacket packet = new UnboundedEntityVelocityS2CPacket(entity.getEntityId(), velocity);
                 NetworkHandler.sendToAll(packet, world.getServer().getPlayerManager());
             }
         }
